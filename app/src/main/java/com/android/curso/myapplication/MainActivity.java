@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private  TextView tvFecha;
     private  EditText edtNombre;
     private RadioGroup bgOpciones;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,11 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 tvhora.setText(hora+"-"+minuto);
             }
         },10,20,true).show(); // true = formato 24h - false formato 12h
-
-
-
-
     }
+
     public void citar(View v){
 
         Intent intent=new Intent(this,ConfirmacionActivity.class);
@@ -72,9 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-
      startActivity(intent);
-
-
     }
 }
