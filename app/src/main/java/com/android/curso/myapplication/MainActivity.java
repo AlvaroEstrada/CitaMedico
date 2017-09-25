@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTimeSet(TimePicker timePicker, int hora, int minuto) {
 
-                tvhora.setText(hora+"-"+minuto);
+                tvhora.setText(hora+":"+minuto);
             }
         },10,20,true).show(); // true = formato 24h - false formato 12h
     }
